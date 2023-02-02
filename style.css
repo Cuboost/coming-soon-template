@@ -1,0 +1,103 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    background: linear-gradient(to bottom right, rgb(46, 9, 53), black) fixed;
+    margin: 0;
+    user-select: none;
+    overflow: scroll;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Message */
+.text {
+    width: 40vw;
+    font-size: 1.5rem;
+    transition: all 1s;
+}
+
+/* Image */
+#freepik_stories-software-code-testing {
+    width: 40vw;
+    min-width: 250px;
+    transition: all 1s;
+}
+
+/* Links */
+.atribute {
+    font-size: 0.9rem;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 1s;
+    color: white;
+}
+
+a:hover {
+    color: rgb(206, 206, 206);
+}
+
+a:active {
+    color: rgb(174, 174, 174);
+}
+
+/* Buttons */
+button {
+    width: 120px;
+    padding: 12px 0;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(72, 21, 82);
+    transition: all 1s;
+    margin: 0;
+}
+
+button:hover {
+    background-color: rgb(66, 18, 77);
+    color: rgb(206, 206, 206);
+}
+
+button:active {
+    background-color: rgb(46, 9, 53);
+    color: rgb(174, 174, 174);
+}
+
+/* For mobile devices */
+@media screen and (max-width: 910px) {
+    .text {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        width: 60vw;
+    }
+
+    .content {
+        display: block;
+        width: fit-content;
+        text-align: center;
+    }
+
+    button {
+        margin: 1.5vh;
+    }
+}
